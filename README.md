@@ -40,14 +40,18 @@ B1 阶段完整训练/评测数据见 `results/b1/`，与三篇实验文档（`e
 
 ## 安全说明
 
-远程 GPU 服务器凭据**不硬编码在仓库中**，通过环境变量注入：
+远程 GPU 服务器凭据**不硬编码在仓库中**，存放在本地 `.env`（已被 `.gitignore` 忽略）：
 
 ```bash
-export GPU_SERVER_HOST=connect.nmb2.seetacloud.com
-export GPU_SERVER_PORT=14970
-export GPU_SERVER_USER=root
-export GPU_SERVER_PWD=你的密码
+# 1. 复制模板并填入真实密码
+cp .env.example .env
+# 2. 编辑 .env（本机即可，无需每次 export）
+vim .env
 ```
+
+所有远程脚本通过 `server_env.py` 统一加载凭据，优先级：**环境变量 `GPU_SERVER_*` > `.env` 文件**（远程机器无 `.env` 时用环境变量）。上传脚本（`upload_stage.py` / `upload_scripts.py`）已包含 `server_env.py`。
+
+> ⚠️ 防泄露检查：提交前确认 `.env` 未被跟踪 —— `git check-ignore .env` 应输出规则；`.env.example` 只有占位符，可安全入库。
 
 ## 快速开始
 

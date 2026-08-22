@@ -1,8 +1,10 @@
-import paramiko, os, sys
-host = os.environ.get("GPU_SERVER_HOST", "connect.nmb2.seetacloud.com")
-port = int(os.environ.get("GPU_SERVER_PORT", "14970"))
-user = os.environ.get("GPU_SERVER_USER", "root")
-pwd = os.environ["GPU_SERVER_PWD"]  # 必填，通过环境变量提供，勿硬编码
+import paramiko, sys
+from server_env import (
+    SERVER_HOST as host,
+    SERVER_PORT as port,
+    SERVER_USER as user,
+    SERVER_PWD as pwd,
+)
 cmd = sys.argv[1]
 client = paramiko.SSHClient()
 client.set_missing_host_key_policy(paramiko.AutoAddPolicy())
