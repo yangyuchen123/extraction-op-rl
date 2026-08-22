@@ -1,6 +1,6 @@
-# Extraction Operator RL
+# Extraction Ops RL
 
-基于强化学习训练「提取算子」（Extraction Operator）的项目：让 LLM 在图结构/随机地图任务上学习信息提取与动作决策。
+基于强化学习训练「撤离行动」（Extraction Ops）策略的项目：让 LLM 在随机地图上学习完整撤离流程——出生点取钥匙 → 开锁进入目标房间 → 取得密件 → 抵达撤离点撤离。
 
 ## 目录结构
 
