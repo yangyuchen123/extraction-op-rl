@@ -22,6 +22,22 @@
 | `apply_*.py` | 历史修复补丁（dedup/reward/wiring 等） |
 | `*.md` | 实验日志、bug 修复报告、研究路线图 |
 
+## 实验成果（results/）
+
+B1 阶段完整训练/评测数据见 `results/b1/`，与三篇实验文档（`extraction_ops_full_experiment_journal.md`、`extraction_ops_random_maps_bugfix_report.md`、`extraction_ops_research_roadmap.md`）配套参考。
+
+| 文件 | 内容 | 关键发现 |
+| --- | --- | --- |
+| `sweep_summary.json` / `b1_rich_sweep_summary.json` | 分步 sweep 评测（64 局/步） | 随机地图 success_rate 仅 4~9%；`loop_episode_ratio` 全为 1.0 → 模型普遍死循环 |
+| `training_metrics.json` | PPO 训练指标（每步） | 训练中 success_rate 波动大，val/success_rate 与训练不一致 |
+| `dagger_round1_manifest.json` | DAgger 第 1 轮恢复数据 | policy↔expert 分歧率 48%（2649/5506）→ 学到的只是高频捷径 |
+| `eval_step1~5.json` | 每步全量评测原始记录（per-episode） | 提前撤离（未取密件）是主要失败模式 |
+| `06b_fixed_three_layer.json` / `recovery_sft_three_layer.json` | 固定世界 / 恢复 SFT 三层评测 | 恢复 SFT 3-seed 100%；随机图仍差 |
+| `gigpo*` | GIGPO 训练日志与分步评测 | 20 步 GIGPO 退化到 0% → RL 方向需重设计 |
+| `training_pilot3.log` / `clean_ckpts.log` | 原始训练日志 | — |
+
+**核心结论**：BFS 专家保证可行性；SFT 在固定世界 100%、随机图仅 18~25%；模型学到的是“冲撤离点”全局捷径而非逐图路径规划；直接 RL（GIGPO）在随机图上退化，需要先解决探索/死循环与 reward 对齐问题（详见路线图）。
+
 ## 安全说明
 
 远程 GPU 服务器凭据**不硬编码在仓库中**，通过环境变量注入：

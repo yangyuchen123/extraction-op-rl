@@ -3,8 +3,7 @@ __pycache__/
 *.py[cod]
 *.egg-info/
 
-# 训练产物 / 日志 / 数据集（体积大，不入库）
-*.log
+# 训练产物 / 大数据集（体积大，不入库）
 *.jsonl
 *.pt
 *.safetensors
@@ -12,8 +11,10 @@ __pycache__/
 checkpoints/
 outputs/
 data/
-eval_archive/
 *.npy
+
+# 大型评测原始数据（已入库的 results/ 除外）
+eval_archive/
 
 # 环境 / 密钥
 .env

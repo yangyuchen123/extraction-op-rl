@@ -1,0 +1,242 @@
+[
+  {
+    "fixed_val": {
+      "environment_action_valid_ratio": 1.0,
+      "episode_count": 64,
+      "format_valid_ratio": 1.0,
+      "mean_episode_length": 45.84375,
+      "mean_reward": 0.15,
+      "success_count": 5,
+      "success_rate": 0.078125,
+      "terminal_reasons": {
+        "deadline": 17,
+        "extracted_without_objective": 9,
+        "max_steps": 33,
+        "mission_success": 5
+      }
+    },
+    "rolling_val": {
+      "environment_action_valid_ratio": 1.0,
+      "episode_count": 64,
+      "format_valid_ratio": 1.0,
+      "mean_episode_length": 41.65625,
+      "mean_reward": 0.11796875,
+      "success_count": 3,
+      "success_rate": 0.046875,
+      "terminal_reasons": {
+        "deadline": 16,
+        "extracted_without_objective": 16,
+        "max_steps": 29,
+        "mission_success": 3
+      }
+    },
+    "step": 1,
+    "train_like": {
+      "environment_action_valid_ratio": 1.0,
+      "episode_count": 64,
+      "format_valid_ratio": 1.0,
+      "mean_episode_length": 45.4375,
+      "mean_reward": 0.140625,
+      "success_count": 5,
+      "success_rate": 0.078125,
+      "terminal_reasons": {
+        "deadline": 14,
+        "extracted_without_objective": 10,
+        "max_steps": 35,
+        "mission_success": 5
+      }
+    }
+  },
+  {
+    "fixed_val": {
+      "environment_action_valid_ratio": 1.0,
+      "episode_count": 64,
+      "format_valid_ratio": 1.0,
+      "mean_episode_length": 45.140625,
+      "mean_reward": 0.16953125,
+      "success_count": 6,
+      "success_rate": 0.09375,
+      "terminal_reasons": {
+        "deadline": 16,
+        "extracted_without_objective": 10,
+        "max_steps": 32,
+        "mission_success": 6
+      }
+    },
+    "rolling_val": {
+      "environment_action_valid_ratio": 1.0,
+      "episode_count": 64,
+      "format_valid_ratio": 1.0,
+      "mean_episode_length": 47.71875,
+      "mean_reward": 0.13359375,
+      "success_count": 5,
+      "success_rate": 0.078125,
+      "terminal_reasons": {
+        "deadline": 11,
+        "extracted_without_objective": 8,
+        "max_steps": 40,
+        "mission_success": 5
+      }
+    },
+    "step": 2,
+    "train_like": {
+      "environment_action_valid_ratio": 1.0,
+      "episode_count": 64,
+      "format_valid_ratio": 1.0,
+      "mean_episode_length": 44.8125,
+      "mean_reward": 0.13671875,
+      "success_count": 5,
+      "success_rate": 0.078125,
+      "terminal_reasons": {
+        "deadline": 16,
+        "extracted_without_objective": 10,
+        "max_steps": 33,
+        "mission_success": 5
+      }
+    }
+  },
+  {
+    "fixed_val": {
+      "environment_action_valid_ratio": 1.0,
+      "episode_count": 64,
+      "format_valid_ratio": 1.0,
+      "mean_episode_length": 45.703125,
+      "mean_reward": 0.15390625,
+      "success_count": 5,
+      "success_rate": 0.078125,
+      "terminal_reasons": {
+        "deadline": 15,
+        "extracted_without_objective": 10,
+        "max_steps": 34,
+        "mission_success": 5
+      }
+    },
+    "rolling_val": {
+      "environment_action_valid_ratio": 1.0,
+      "episode_count": 64,
+      "format_valid_ratio": 1.0,
+      "mean_episode_length": 45.9375,
+      "mean_reward": 0.1578125,
+      "success_count": 6,
+      "success_rate": 0.09375,
+      "terminal_reasons": {
+        "deadline": 13,
+        "extracted_without_objective": 9,
+        "max_steps": 36,
+        "mission_success": 6
+      }
+    },
+    "step": 3,
+    "train_like": {
+      "environment_action_valid_ratio": 1.0,
+      "episode_count": 64,
+      "format_valid_ratio": 1.0,
+      "mean_episode_length": 44.484375,
+      "mean_reward": 0.140625,
+      "success_count": 5,
+      "success_rate": 0.078125,
+      "terminal_reasons": {
+        "deadline": 15,
+        "extracted_without_objective": 11,
+        "max_steps": 33,
+        "mission_success": 5
+      }
+    }
+  },
+  {
+    "fixed_val": {
+      "environment_action_valid_ratio": 1.0,
+      "episode_count": 64,
+      "format_valid_ratio": 1.0,
+      "mean_episode_length": 45.984375,
+      "mean_reward": 0.15625,
+      "success_count": 5,
+      "success_rate": 0.078125,
+      "terminal_reasons": {
+        "deadline": 16,
+        "extracted_without_objective": 9,
+        "max_steps": 34,
+        "mission_success": 5
+      }
+    },
+    "rolling_val": {
+      "environment_action_valid_ratio": 1.0,
+      "episode_count": 64,
+      "format_valid_ratio": 1.0,
+      "mean_episode_length": 42.421875,
+      "mean_reward": 0.13125,
+      "success_count": 4,
+      "success_rate": 0.0625,
+      "terminal_reasons": {
+        "deadline": 12,
+        "extracted_without_objective": 17,
+        "max_steps": 31,
+        "mission_success": 4
+      }
+    },
+    "step": 4,
+    "train_like": {
+      "environment_action_valid_ratio": 1.0,
+      "episode_count": 64,
+      "format_valid_ratio": 1.0,
+      "mean_episode_length": 45.109375,
+      "mean_reward": 0.13671875,
+      "success_count": 5,
+      "success_rate": 0.078125,
+      "terminal_reasons": {
+        "deadline": 15,
+        "extracted_without_objective": 10,
+        "max_steps": 34,
+        "mission_success": 5
+      }
+    }
+  },
+  {
+    "fixed_val": {
+      "environment_action_valid_ratio": 1.0,
+      "episode_count": 64,
+      "format_valid_ratio": 1.0,
+      "mean_episode_length": 45.390625,
+      "mean_reward": 0.14609375,
+      "success_count": 5,
+      "success_rate": 0.078125,
+      "terminal_reasons": {
+        "deadline": 19,
+        "extracted_without_objective": 9,
+        "max_steps": 31,
+        "mission_success": 5
+      }
+    },
+    "rolling_val": {
+      "environment_action_valid_ratio": 1.0,
+      "episode_count": 64,
+      "format_valid_ratio": 1.0,
+      "mean_episode_length": 46.515625,
+      "mean_reward": 0.08203125,
+      "success_count": 2,
+      "success_rate": 0.03125,
+      "terminal_reasons": {
+        "deadline": 19,
+        "extracted_without_objective": 11,
+        "max_steps": 32,
+        "mission_success": 2
+      }
+    },
+    "step": 5,
+    "train_like": {
+      "environment_action_valid_ratio": 1.0,
+      "episode_count": 64,
+      "format_valid_ratio": 1.0,
+      "mean_episode_length": 45.1875,
+      "mean_reward": 0.1375,
+      "success_count": 5,
+      "success_rate": 0.078125,
+      "terminal_reasons": {
+        "deadline": 15,
+        "extracted_without_objective": 10,
+        "max_steps": 34,
+        "mission_success": 5
+      }
+    }
+  }
+]
